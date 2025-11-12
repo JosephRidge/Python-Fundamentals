@@ -51,6 +51,8 @@ secondName = "Doe"
 FUNCTIONS: 
  - does something
  - group related procedure into one "call"
+ - parameterized functions
+ - non-parameterized function 
 
 ==== RULE ====
 - must have "def" keyword 
@@ -60,11 +62,11 @@ FUNCTIONS:
 - MUST do one thing only #singlePurpose
 """
 
-#  defining plain function 
+#  DEFINE-ing plain function 
 def greetings():
     print("Hellow Human!")
 
-# calling a function
+# CALL-ing a function
 greetings()
 
 # parameterized function
