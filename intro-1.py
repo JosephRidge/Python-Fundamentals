@@ -100,6 +100,124 @@ fruits = ["apple", "mango", "banana","pear"]
 output =  secondName is firstName # is acts as an idntity operator answers the quester "is it equal to"
 output = 'n' in firstName # in is  membership operator answers the question "is it fonud in ..."
 output = "mango" in fruits
+
+
+
+# ENUM: put together the related constants. 
+from enum import Enum
+
+class LoginState(Enum):
+    IN_ACTIVE = 0
+    ACTIVE =1
+
+output = LoginState.ACTIVE.value
+output = LoginState.IN_ACTIVE.value
+
+"""
+DATA TYPES: 
+- What entity do we place in a variable. 
+- Boolean: True or False
+- Numbers( int, float, complex)
+- Strings
+- Lists - []
+- Tuples- ()
+- Dictionary - {}
+- Set- {}
+
+from the above we create objects and each object has access ot dedicated methods
+"""
+
+# Boolean: True or False
+
+isLoggedIn = True 
+isProgressing = False
+
+output = isLoggedIn
+output = not isProgressing
+
+# Numbers( int, float, complex)
+#  int => -ve infinity to +ve infinity
+num1 = 10 
+num2 = -10
+num =  int("100") # type cast => convert to integer
+ 
+# float => 64Bbit, they decimal numbers   -ve infinity to +ve infinity
+num3 = 0.3456
+num4 = -1.34566
+
+num =  float(num1) # convert to floating/ decimal
+# complex  square root of 2 => complex number j
+num5 = 2j
+num =  complex(num1) # convert to complex number
+
+output = num5
+output = num
+
+
+years = 100
+output = f"HERO1: {firstName} || HERO2: {secondName} and they have been friends for {years}yrs"   
+
+# Strings => collection of character but it is immutable
+firstName = "Spiderman"
+secondName = "Batman"
+# string concatenation: +, comma, f-string
+output = firstName + secondName # using +
+output = firstName, secondName 
+output = f"{firstName} {secondName}" #f-string
+
+# String is a collection of characters => you can access each character using indexes
+output = firstName[-1]
+
+# slicing: select a portion of the actual string. nameOfString[start:end] end position = end - 1
+output = firstName[0:6]
+output = firstName[:-1]
+output = firstName[-1:]
+output = firstName[:]
+output = firstName[2:]
+
+# string methods
+output = firstName.upper()
+output = firstName.lower()
+output = firstName.capitalize()
+output = firstName.isalnum()
+
+
+"""
+List: 
+- ordered
+- a collection of items 
+- it contain different data types of items
+- accessed via indexes (makes it fast for accessing, deletion and updating values)** performance # O(1)
+- insertion at specific points (takes up some significant compute)** performance O(n)
+- represented using []
+- mutable(change or update the elements) in nature 
+
+ ===== RULE =====
+ - Name is it as per what is actually is eg firstName or lastName, accessToken
+ - choose either camelCase(firstName or lastName) or snake_case(first_name or last_name)
+ - do not use in-built keywords eg and, or if
+ - do not start with a number or a special character
+
+"""
+# list
+fruits = ["apples", "mangoes", "banana", "pear", "pineapples"] 
+
+output = fruits[2]# indexes
+output = fruits[2:] #sclicing
+output = fruits[2:4] #slicing
+
+# fruits.pop() # removes and updates last element
+
+output = len(fruits) # checks size of list
+fruits.append("oranges")
+fruits.insert(2,"watermelon") # computattionally expensive => 
+
+output = "avocado" in fruits # membership
+output = fruits
+
+
+
+
 print("==================================================")
 print(output)
 print("==================================================")
