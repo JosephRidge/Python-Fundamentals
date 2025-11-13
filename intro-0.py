@@ -22,12 +22,12 @@ Python language: Collection of code that allows one to be able to write python c
 # VARIABLES: 
  - containers that hold something
  - linked to the memory
- - type inference
+ - type inference (automatically inferes the data type)
  - scope(Local or Global)
 
  ===== RULE =====
  - Name is it as per what is actually is eg firstName or lastName, accessToken
- - choose either camel-case(firstName or lastName) or snake_case(first_name or last_name)
+ - choose either camelCase(firstName or lastName) or snake_case(first_name or last_name)
  - do not use in-built keywords eg and, or if
  - do not start with a number or a special character
  KISS**

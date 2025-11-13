@@ -1,3 +1,5 @@
+# RECIPE
+
 """
 GAME: ROCK PAPER SCISSORS:
 
@@ -43,7 +45,7 @@ import random
 
 gameChoices = ["rock", "paper", "scissors"]
 output =""
-
+ 
 # choice selection
 def playerChoice():
     playerOneName = input("Enter your cool game_NAME! eg Hero X: ") 
